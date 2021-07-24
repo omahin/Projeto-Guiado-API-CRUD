@@ -7,7 +7,7 @@ Reprograma :rocket: | Turma Online 12 | Back-end | 2021 |
 
 Uma api que permite você observar diferentes viagens de ônibus, controlando informações sobre o motorista e passageiros!<br />
 
-## Demandas de negócio & rotas criadas :hammer_and_wrench:
+## Demandas de negócio & Rotas criadas :hammer_and_wrench:
 
 :small_blue_diamond: **Ordenar viagens com número de passageiros**<br />
 
