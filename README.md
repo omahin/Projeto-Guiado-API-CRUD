@@ -9,12 +9,12 @@ Uma api que permite você observar diferentes viagens de ônibus, controlando in
 
 ## Demandas de negócio & rotas criadas :hammer_and_wrench:
 
-:small_blue_diamond: Ordenar viagens com número de passageiros.<br />
+:small_blue_diamond: **Ordenar viagens com número de passageiros**<br />
 
 {GET}/travels/passengerNumber
 const passengerNumber
 
-:small_blue_diamond: Cadastrar todas as informações de um novo motorista em uma viagem.<br />
+:small_blue_diamond: **Cadastrar todas as informações de um novo motorista em uma viagem**<br />
 
 {POST}/travels/:id/driver/create
 
@@ -26,7 +26,7 @@ const passengerNumber
 
 const createDriver
 
-:small_blue_diamond: Editar qualquer dado do motorista.<br/>
+:small_blue_diamond: **Editar qualquer dado do motorista**<br/>
 
 {PATCH}/driver/:id/updateDriver
 
@@ -38,7 +38,7 @@ const createDriver
 
  const updateDriver
 
-:small_blue_diamond: Substituir motorista.<br/>
+:small_blue_diamond: **Substituir motorista**<br/>
 
 {PUT}/driver/:id/replaceDriver
 
@@ -50,7 +50,7 @@ const createDriver
 
 const replaceDriver
 
-:small_blue_diamond: Deletar uma viagem.<br />
+:small_blue_diamond: **Deletar uma viagem**<br />
 
 {DELETE}/travel/:id/delete
 
@@ -58,6 +58,6 @@ const deleteTravel
 
 ### DESAFIO :scream: <br />
 
-:small_blue_diamond: Ver viagens por tempo de duração.<br />
+:small_blue_diamond: **Ver viagens por tempo de duração**<br />
 
-:small_blue_diamond: Ordenar viagens com número de paradas.<br />
+:small_blue_diamond: **Ordenar viagens com número de paradas**<br />
