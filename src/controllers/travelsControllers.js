@@ -12,9 +12,21 @@ const getTravelById = (req, res) => {
     res.status(200).send(filteredTravel);
 };
 
-// const passengerNumber = (req, res) => {
-//     const requestedId = req.params.id;
-// }
+const getAllPassengerCapacity = (req, res) => {
+    const filteredTravel = travels.filter(quant => quant.busInfos.capacity > 0);
+
+    const capacitySort = filteredTravel.sort(function (a, b) {
+
+        if (a.busInfos.capacity > b.busInfos.capacity) {
+            return 1;
+        } else if (b.busInfos.capacity > a.busInfos.capacity) {
+            return -1;
+        } else {
+            return 0
+        }
+    })
+    res.status(200).send(capacitySort);
+}
 
 
 const deleteTravel = (req, res) => {
@@ -33,6 +45,6 @@ const deleteTravel = (req, res) => {
 module.exports = {
     getAllTravels,
     getTravelById,
-    // passengerNumber,
+    getAllPassengerCapacity,
     deleteTravel
 }

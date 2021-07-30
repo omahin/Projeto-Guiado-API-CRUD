@@ -6,11 +6,11 @@ const passengersController = require("../controllers/passengerControllers");
 const driversController = require("../controllers/driversControllers");
 
 // VIAGENS
-router.get("/travels", travelsController.getAllTravels);
+router.get("/travels/", travelsController.getAllTravels);
+
+router.get("/travels/capacity", travelsController.getAllPassengerCapacity);
 
 router.get("/travels/:id", travelsController.getTravelById);
-
-// router.get("/travels/:id/passengerNumber", travelsController.passengerNumber)
 
 router.post("/travels/:id/passenger/create", passengersController.createPassenger);
 

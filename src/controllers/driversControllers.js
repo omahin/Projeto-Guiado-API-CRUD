@@ -74,17 +74,17 @@ const updateDriver = (req,res) => {
     if(filteredDriver){
         filteredDriver.data = newData;
 
-    //     fs.writeFile("./src/models/travels.json", JSON.stringify(drivers), 'utf8', function(err){
-    //         if(err) {
-    //             res.status(500).send({ message: err})
-    //         } else {
-    //             res.status(200).json([{
-    //                 "mensagem": "Dados alterados com sucesso!",
-    //                 filteredDriver
-    //             }]);
-    //         }
-    //     })
-    // } else {
+        fs.writeFile("./src/models/travels.json", JSON.stringify(drivers), 'utf8', function(err){
+            if(err) {
+                res.status(500).send({ message: err})
+            } else {
+                res.status(200).json([{
+                    "mensagem": "Dados alterados com sucesso!",
+                    filteredDriver
+                }]);
+            }
+        })
+    } else {
         res.status(500).send({ "message": "Dados não foram atualizados!"})
     }
 }
